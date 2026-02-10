@@ -1,0 +1,108 @@
+:root {
+  color-scheme: dark;
+  font-family: "Courier New", Courier, monospace;
+  background: #0f1115;
+  color: #e8e6df;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #151a22, #0b0d12);
+}
+
+.app {
+  width: min(90vw, 640px);
+  display: grid;
+  gap: 16px;
+  padding: 24px;
+  border: 2px solid #e8e6df;
+  background: #141821;
+}
+
+.header {
+  display: grid;
+  gap: 4px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.score,
+.status {
+  font-size: 14px;
+}
+
+.board {
+  display: grid;
+  aspect-ratio: 1 / 1;
+  border: 2px solid #e8e6df;
+  background: #0f131b;
+}
+
+.cell {
+  border: 1px solid #1e2430;
+}
+
+.cell.snake {
+  background: #e8e6df;
+}
+
+.cell.head {
+  background: #41c97d;
+}
+
+.cell.food {
+  background: #f26d5b;
+}
+
+.controls,
+.mobile-controls {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  appearance: none;
+  border: 2px solid #e8e6df;
+  background: #1a2030;
+  color: #e8e6df;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.help {
+  font-size: 12px;
+}
+
+.mobile-controls {
+  display: none;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.mobile-controls .row {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+@media (pointer: coarse) {
+  .mobile-controls {
+    display: flex;
+  }
+}
