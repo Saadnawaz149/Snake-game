@@ -3,7 +3,7 @@
 Classic Snake built with a modern React + Vite setup.
 
 ## Live Demo
-- https://snake-game-4a6arslvh-saad-nawazs-projects.vercel.app
+- https://snake-game-peach-five.vercel.app
 
 ## Tech Stack
 - **Languages:** JavaScript (ES6), HTML, CSS
